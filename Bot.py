@@ -1,7 +1,9 @@
 from telegram import Update, ReplyKeyboardMarkup, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, CallbackQueryHandler, ContextTypes, filters
 
-TOKEN = "8481916260:AAGuwx2x9QMjZHKGim9GXKuzR2rg8gYRQ9E"
+import os
+
+TOKEN = os.environ.get("TOKEN")
 
 # ID бариста
 BARISTAS = [1109287655, 8274340723]  # замените на настоящие ID
